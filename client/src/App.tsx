@@ -155,7 +155,7 @@ function App() {
               <Button 
                 type="submit" 
                 disabled={isLoading || !formData.title.trim()}
-                className="w-full bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-medium py-3 rounded-lg transition-all duration-200 transform hover:scale-[1.02]"
+                className="w-full bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white font-medium py-3 rounded-lg transition-all duration-200 transform hover:scale-[1.02]"
               >
                 {isLoading ? '✨ Creating...' : '🚀 Add Task'}
               </Button>
@@ -222,7 +222,7 @@ function App() {
                             <Button
                               onClick={() => handleUpdateTodo(todo.id)}
                               size="sm"
-                              className="bg-green-600 hover:bg-green-700"
+                              className="bg-red-600 hover:bg-red-700"
                             >
                               <Save className="w-4 h-4 mr-1" />
                               Save
